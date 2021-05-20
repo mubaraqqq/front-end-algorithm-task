@@ -11,6 +11,7 @@ const convertFahrToCelsius = x => {
     }
 };
 
+
 const checkYuGiOh = n => {
     if (!Number(n)) {
         return `invalid parameter: ${n}`;
