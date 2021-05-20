@@ -5,13 +5,13 @@ const convertFahrToCelsius = x => {
     } else if (x.constructor === Object) {
         return (JSON.stringify(x) + ` is not a valid number but an object`);
     } else if ( !Number(x)) {
-        return (`${x} is not a valid number but a string`)
+        return (`${x} is not a valid number but a string`);
+    } else if (typeof x === 'boolean') {
+        return (`${x} is not a valid number but a boolean operator`);
     } else {
         return (temp * 5 / 9).toFixed(4);
     }
 };
-
-
 
 const checkYuGiOh = n => {
     if (!Number(n)) {
